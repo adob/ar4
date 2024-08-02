@@ -15,7 +15,8 @@ exec firejail --profile=<(cat <<-EOF
 
     env JAIL_USER=$name
 
-    private-dev
+    # uncommenting private-dev will restrict access to USB devices
+    # private-dev
     private-tmp
 
     # apparmor
@@ -48,6 +49,9 @@ exec firejail --profile=<(cat <<-EOF
     # tab
 
     seccomp !chroot,!mount,!pivot_root,!umount2
+
+    dbus-system none
+    dbus-user none
 EOF
 ) "bin/devbox" shell
 
