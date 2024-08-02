@@ -1,49 +1,10 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "platformio@latest": {
-      "last_modified": "2024-07-19T15:40:08Z",
-      "resolved": "github:NixOS/nixpkgs/ad0111043c09f7d0f6b9f039882cbf350d4f7d49#platformio",
-      "source": "devbox-search",
-      "version": "6.1.11",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/pysq6w9970jp8d4n6w0w5n93dpmd7qss-platformio-6.1.11",
-              "default": true
-            },
-            {
-              "name": "udev",
-              "path": "/nix/store/s09lii38smkq5cjwawq147anqw296wfl-platformio-6.1.11-udev"
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/2l3wx0apmvgv38p66ip5hwijham5kagr-platformio-6.1.11-dist"
-            }
-          ],
-          "store_path": "/nix/store/pysq6w9970jp8d4n6w0w5n93dpmd7qss-platformio-6.1.11"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/88z5v33w32r9kn93kq7jgq5dbsm9ry9g-platformio-6.1.11",
-              "default": true
-            },
-            {
-              "name": "udev",
-              "path": "/nix/store/0r92ixw0kkfc3wdqqnk3d2572fr4fi18-platformio-6.1.11-udev"
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/sr0saq1qrki9vgzpx33l5xmll2hc5nsw-platformio-6.1.11-dist"
-            }
-          ],
-          "store_path": "/nix/store/88z5v33w32r9kn93kq7jgq5dbsm9ry9g-platformio-6.1.11"
-        }
-      }
+    "python3": {
+      "plugin_version": "0.0.3",
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#python3",
+      "source": "nixpkg"
     }
   }
 }

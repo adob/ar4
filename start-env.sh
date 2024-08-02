@@ -44,7 +44,9 @@ exec firejail --profile=<(cat <<-EOF
 
     allow-debuggers
 
-    tab
+    # only supported starting in v0.9.70
+    # tab
+
     seccomp !chroot,!mount,!pivot_root,!umount2
 EOF
 ) "bin/devbox" shell

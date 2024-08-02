@@ -5,7 +5,7 @@
 ```
 # install git if not already installed
 sudo apt install git
-git clone https://github.com/adob/ar4.git
+git clone --recurse-submodules https://github.com/adob/ar4.git
 cd ar4
 ```
 
