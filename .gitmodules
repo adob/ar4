@@ -1,9 +1,9 @@
-[submodule "third_party/lib"]
-	path = third_party/lib
-	url = git@github.com:adob/lib.git
 [submodule "third_party/TeensyTimerTool"]
 	path = third_party/TeensyTimerTool
 	url = git@github.com:adob/TeensyTimerTool.git
 [submodule "third_party/toolchain-gccarmnoneeabi-teensy"]
 	path = third_party/toolchain-gccarmnoneeabi-teensy
 	url = git@github.com:adob/toolchain-gccarmnoneeabi-teensy.git
+[submodule "third_party/baselib"]
+	path = third_party/baselib
+	url = git@github.com:adob/baselib.git
