@@ -1,0 +1,1 @@
+PKGCONFIG = ['orocos-kdl']

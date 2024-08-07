@@ -1,20 +1,30 @@
 {
-  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.12.0/.schema/devbox.schema.json",
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.12.0/.schema/devbox.schema.json",
   "packages": [
     "python3",
-    //"poetry"
-    //"platformio@latest"
+    "gcc@14",
+    "pkg-config@latest",
+    "elfutils", // provides libdw needed by baselib/debug
+    "qt6.full@latest",
+    "orocos-kdl@latest",
+    "clang@latest",
+
+    //"xmake",
+    //"vscode"
   ],
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null",
       "export PATH=\"~/bin:$PATH\"",
-      ". $VENV_DIR/bin/activate"
+      ". $VENV_DIR/bin/activate",
+      "alias bt=\"$PWD/buildtool.py\"",
+
+      "export LANG=C.UTF-8", // https://github.com/jetify-com/devbox/issues/80
     ],
     "scripts": {
       "test": [
         "echo \"Error: no test specified\" && exit 1",
-      ]
-    }
-  }
+      ],
+    },
+  },
 }

@@ -1,12 +1,12 @@
 [submodule "third_party/TeensyTimerTool"]
-	path = third_party/TeensyTimerTool
+	path = deps/TeensyTimerTool
 	url = git@github.com:adob/TeensyTimerTool.git
 [submodule "third_party/toolchain-gccarmnoneeabi-teensy"]
-	path = third_party/toolchain-gccarmnoneeabi-teensy
+	path = deps/toolchain-gccarmnoneeabi-teensy
 	url = git@github.com:adob/toolchain-gccarmnoneeabi-teensy.git
 [submodule "third_party/baselib"]
-	path = third_party/baselib
+	path = deps/baselib
 	url = git@github.com:adob/baselib.git
 [submodule "third_party/buildtool"]
-	path = third_party/buildtool
+	path = deps/buildtool
 	url = git@github.com:adob/buildtool.git
