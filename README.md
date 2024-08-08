@@ -1,3 +1,8 @@
+This repository code for custom firmware and tools for the Annin AR4 robotic arm to enable teleoperation using [GELLO](https://wuphilipp.github.io/gello_site/).
+
+This code should be considered experimental.
+
+
 ### Building the firmware
 
 ## clone the repo
