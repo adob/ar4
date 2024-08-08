@@ -1,3 +1,6 @@
 {
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "clangd.arguments": [
+        // "-log=verbose"
+    ]
 }

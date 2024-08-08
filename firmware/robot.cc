@@ -2,7 +2,7 @@
 #include <core_pins.h>
 #include <cmath>
 
-#include "robot/interface.h"
+#include "interface/interface.h"
 #include "math.h"
 #include "lib/print.h"
 

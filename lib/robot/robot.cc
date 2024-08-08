@@ -1,5 +1,5 @@
 #include <fcntl.h>
-#include <math.h>
+#include <cmath>
 
 #include "robot.h"
 #include "interface/interface.h"

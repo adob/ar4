@@ -1,0 +1,1 @@
+PKGCONFIG = ["opencv4", "Qt6Widgets", "Qt6Multimedia", "Qt6MultimediaWidgets", 'visp']

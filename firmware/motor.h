@@ -1,7 +1,7 @@
 #pragma once
 
 #include "lib/base.h"
-#include "robot/interface.h"
+#include "interface/interface.h"
 #include "stepper.h"
 #include "encoder.h"
 

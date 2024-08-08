@@ -1,0 +1,5 @@
+namespace flatbuffer;
+
+struct Pose {
+    v: [float64:6];
+}

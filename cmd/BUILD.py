@@ -1,1 +1,1 @@
-PKGCONFIG = ['Qt6Core']
+PKGCONFIG = ['Qt6Core', 'visp']

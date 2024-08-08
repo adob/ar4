@@ -3,14 +3,18 @@
   "packages": [
     "python3",
     "gcc@14",
-    "pkg-config@latest",
-    "elfutils", // provides libdw needed by baselib/debug
-    "qt6.full@latest",
-    "orocos-kdl@latest",
     "clang@latest",
+    "clang-tools@latest", // for clangd to find the correct headers
+    "path:deps/nixpkgs#pkg-config",
+    "path:deps/nixpkgs#elfutils", // provides libdw needed by baselib/debug
+    "path:deps/nixpkgs#qt6.full",
+    "path:deps/nixpkgs#orocos-kdl",
+    "path:deps/nixpkgs#visp",
+    "path:deps/nixpkgs#highfive",
+    "path:deps/nixpkgs#hdf5",
+    "path:deps/nixpkgs#flatbuffers",
 
-    //"xmake",
-    //"vscode"
+    "github:numtide/nix-gl-host" // necessary to use Qt GUI applications
   ],
   "shell": {
     "init_hook": [
@@ -20,6 +24,8 @@
       "alias bt=\"$PWD/buildtool.py\"",
 
       "export LANG=C.UTF-8", // https://github.com/jetify-com/devbox/issues/80
+      "export LD_LIBRARY_PATH=$(nixglhost -p):$LD_LIBRARY_PATH",  // https://github.com/numtide/nix-gl-host
+      "export PATH=\"`qtpaths --query QT_INSTALL_LIBEXECS`:$PATH\""
     ],
     "scripts": {
       "test": [

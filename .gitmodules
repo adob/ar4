@@ -10,3 +10,12 @@
 [submodule "third_party/buildtool"]
 	path = deps/buildtool
 	url = git@github.com:adob/buildtool.git
+[submodule "deps/nixpkgs"]
+	path = deps/nixpkgs
+	url = git@github.com:adob/nixpkgs.git
+[submodule "deps/DynamixelSDK"]
+	path = deps/DynamixelSDK
+	url = https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+[submodule "deps/verdigris"]
+	path = deps/verdigris
+	url = https://github.com/woboq/verdigris.git

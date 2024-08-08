@@ -2,7 +2,7 @@
 
 #include "lib/base.h"
 #include "lib/array.h"
-#include "robot/interface.h"
+#include "interface/interface.h"
 #include "motor.h"
 #include "stepper_timer.h"
 

@@ -2,7 +2,7 @@
 #include <core_pins.h>
 
 #include "service.h"
-#include "robot/interface.h"
+#include "interface/interface.h"
 #include "stepper.h"
 #include "lib/print.h"
 

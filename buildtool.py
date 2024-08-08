@@ -3,7 +3,7 @@
 from deps.buildtool import *
 
 INCPATH += [
-    "-Idebs/baselib", "-iquotelib"
+    "-Ideps/baselib", "-iquotelib", "-iquotedeps"
 ]
 
 main()

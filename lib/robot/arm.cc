@@ -69,7 +69,7 @@ void AR4Arm::move_joints_rel(robot::Pose const& joints, bool await, error& err) 
         return;
     }
     
-    robot::MoveJointsAbsRequest req;
+    robot::MoveJointsAbsRequest req = {};
     
     if (joints[0] != 0) {
         req.j1.enable           = true;

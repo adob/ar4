@@ -1,0 +1,1 @@
+PKGCONFIG = ['Qt6Widgets']

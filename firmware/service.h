@@ -1,5 +1,5 @@
 #pragma once
-#include "robot/interface.h"
+#include "interface/interface.h"
 #include "lib/base.h"
 #include "serialrpc/server.h"
 

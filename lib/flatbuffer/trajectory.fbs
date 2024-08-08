@@ -1,0 +1,9 @@
+include "pose.fbs";
+
+namespace flatbuffer;
+
+table Trajectory {
+    poses: [Pose];
+}
+
+root_type Trajectory;

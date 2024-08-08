@@ -1,0 +1,22 @@
+include "pose.fbs";
+
+namespace flatbuffer;
+
+table Observation {
+    cam_wrist : [uint8] (id: 0, deprecated);
+    cam_side  : [uint8] (id: 1, deprecated);
+    
+    cameras   : [Image] (id: 4);
+    qpos      : Pose    (id: 2);
+    action    : Pose    (id: 3);
+}
+
+table Recording { 
+    observations: [Observation];
+}
+
+table Image {
+    data : [uint8];
+}
+
+root_type Recording;
